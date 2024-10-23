@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(46,61,89,1) 0%, rgba(20,26,38,1) 60%, rgba(13,13,13,1) 100%);
+}
+
+#lyrics {
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,0.35) 0px 0px 25px;
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 50%;
+    top: 45%;
+    left: 25%;
+    color: white;
+    animation: fadeIn 3s ease-in-out, float 6s ease-in-out infinite;
+    -webkit-animation: fadeIn 3s ease-in-out, float 6s ease-in-out infinite;
+    -moz-animation: fadeIn 3s ease-in-out, float 6s ease-in-out infinite;
+    -o-animation: fadeIn 3s ease-in-out, float 6s ease-in-out infinite;
+}
+
+a {
+    text-decoration: none;
+    color: orangered;
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-shadow: rgba(255,255,255,0.35) 0px 0px 25px;
+    animation: fadeIn 8s ease-in-out;
+    -webkit-animation: fadeIn 8s ease-in-out;
+    -moz-animation: fadeIn 8s ease-in-out;
+    -o-animation: fadeIn 8s ease-in-out;
+}
+
+a:hover {
+    display: inline-block;
+    transition-duration: 2s;
+    color: green;
+    transform: translate(0, -1em) rotate(-25deg);
+    -webkit-transform: translate(0, -1em) rotate(-25deg);
+    -moz-transform: translate(0, -1em) rotate(-25deg);
+    -ms-transform: translate(0, -1em) rotate(-25deg);
+    -o-transform: translate(0, -1em) rotate(-25deg);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-shadow: rgba(255,255,255,0.35) 0px 0px 25px;
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    animation: fadeIn 3s ease;
+    -webkit-animation: fadeIn 3s ease;
+    -moz-animation: fadeIn 3s ease;
+    -o-animation: fadeIn 3s ease;
+}
+
+footer a:hover {
+    display: inline-block;
+    transition-duration: 2s;
+    color: lightblue;
+    transform: scale(1.35);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
